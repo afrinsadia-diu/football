@@ -196,6 +196,41 @@ footer img {
   }
 }
 
+/* Top Hired Player  */
+.hire{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hired{
+  margin-bottom: 130px;
+
+}
+.hire-title{
+  color: #562EFF;
+  font-size: 36px;
+  margin-bottom: 0px;
+  
+}
+.hire-players{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* grid-template-columns: repeat(1fr 1fr 1fr); */
+  grid-row-gap: 30px ;
+  grid-column-gap: 30px;
+}
+.hire-player{
+  display: flex;
+  align-items: center;
+}
+.hire-player img{
+  width: 56px;
+  height: 56px;
+}
+.hire-player-name{
+  padding-left: 16px;
+  font-size: 18px;
+}
 
 /* Media Queries For Medium Size Screen Like Tablet */
 
