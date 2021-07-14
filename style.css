@@ -1,3 +1,8 @@
+@media only screen and (max-width: 600px) {
+}
+ 
+
+
 /* Common style  */
 body {
   font-family: "Poppins", sans-serif;
@@ -38,6 +43,7 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+     
 .banner img {
   padding: 153px 140px 86px 0px;
 }
@@ -54,7 +60,9 @@ body {
 }
 .all-players{
     margin-bottom: 100px;
-    width:1440px; ;
+    width:1440px; 
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .player-info {
   display: grid;
@@ -66,10 +74,12 @@ body {
 .player-detail{
     border: 15px solid #ffffff;
     box-shadow: 0px 0px 40px gray;
-    width: 200px;
+    width: 330px;
+    height: 474px;
 }
 .player-detail img {
-  width: 100%;}
+  width: 100%;
+}
 .player-name {
   font-size: 28px;
   color: #18191f;
@@ -176,4 +186,14 @@ hr{
 
 /* Footer section  */
 
-footer .logo
+.footer-logo{
+margin-right: 475px;
+margin-left: 475px;
+}
+.footer-logo img{
+  width: 483px;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+
+}
