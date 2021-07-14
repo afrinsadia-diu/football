@@ -96,7 +96,7 @@ body {
   font-size: 40px;
   text-align: center;
 }
-.top-player{
+.top-playerss{
   display: flex;
   width: 100%;
 
@@ -182,6 +182,42 @@ hr{
   width: 556px;
   height: 438px;
 }
+
+/* Top Hired Player  */
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-player{
+  margin-bottom: 130px;
+
+}
+.section-title{
+  color: #562EFF;
+  font-size: 36px;
+  margin-bottom: 0px;
+  
+}
+.players{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  /* grid-template-columns: repeat(1fr 1fr 1fr); */
+  grid-row-gap: 30px ;
+}
+.player{
+  display: flex;
+  align-items: center;
+}
+.player img{
+  width: 56px;
+  height: 56px;
+}
+.player-name{
+  padding-left: 16px;
+  font-size: 18px;
+}
+
 
 
 /* Footer section  */
