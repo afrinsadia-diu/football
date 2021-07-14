@@ -1,11 +1,18 @@
-@media only screen and (max-width: 600px) {
-}
- 
-
-
-/* Common style  */
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap");
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container {
+  width: 870px;
+  background-color: #ffffff;
 }
 
 /* Header section  */
@@ -20,7 +27,7 @@ body {
   display: flex;
 }
 .copa-title {
-  padding: 160px 111px 169px 147px;
+  padding: 20px;
 }
 .half-width {
   width: 50%;
@@ -43,207 +50,194 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-     
+.button:hover{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    transition: 0.5s;
+  }
 .banner img {
-  padding: 153px 140px 86px 0px;
-}
-.half-width img {
-  width: 556px;
-  height: 438px;
+  padding: 5px;
+  width: 450px;
 }
 
-/* Players Section Style  */
-
+/* Players Section */
+players-section {
+  display: flex;
+}
 .players {
-    padding-top: 70px;
-  
-}
-.all-players{
-    margin-bottom: 100px;
-    width:1440px; 
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.player-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
-  grid-row-gap: 27px;
+}
+.player {
+  height: 450px;
+  width: 330px;
+  margin: 13px;
+  padding: 15px;
+  padding-right: 15px;
+  box-shadow: 10px 10px 20px rgb(224, 221, 221);
 }
 
-.player-detail{
-    border: 15px solid #ffffff;
-    box-shadow: 0px 0px 40px gray;
-    width: 330px;
-    height: 474px;
-}
-.player-detail img {
-  width: 100%;
-}
-.player-name {
-  font-size: 28px;
-  color: #18191f;
-  margin: 0px;
-  padding-top: 16px;
-}
-.player-details {
-  color: #6c6c6c;
-  font-size: 16px;
+.player img {
+  height: 256px;
+  width: 330px;
 }
 
-/* Top-players */
-.top-title{
-  font-size: 40px;
-  text-align: center;
-}
-.top-playerss{
+/* Highlights Section */
+
+.highlights {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  margin: 70px;
+  padding: 40px;
+}
+.content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+.content p {
+  line-height: 1.8;
+}
 
+.photo img {
+  height: 380px;
+  width: 510px;
 }
-hr{
-  margin-left: 40%;
-  margin-right: 40%;
-}
-.player1{
-  width: 25%;
-  margin-right: 2.5%;
-  margin-left: 7.5%;
-  padding-left: 10px;
-  padding-right: 10px;
+
+/* Matches Section */
+.matches h1 {
   text-align: center;
-
-
 }
-.player1 p{
-  line-height: 1.5;
-}
-.player2{
-  width: 25%;
-  margin-right: 2.5%;
-  margin-left: 2.5%;
-  text-align: center;
-
-
-}.player2 p{
-  line-height: 1.5;
-}
-.player3{
-  width: 25%;
-  margin-left: 2.5%;
-  margin-right: 7.5%;
-  text-align: center;
-
-
-}
-.player3 p{
-  line-height: 1.5;
-}
-
-
-.image{
-  border-radius: 50%;
-  width: 70%;
-  border: 2px solid tomato;
-}
-
-/* Highligts section style  */
-
-.highlight-header {
-  width: 1440px;
-}
-.copa-title {
-  padding: 160px 111px 169px 147px;
-}
-.half-width {
-  width: 50%;
-}
-.highlight h1 {
-  font-size: 4em;
-}
-
-.button {
-  background-color: #e02c6d;
-  color: white;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-.banner img {
-  padding: 153px 140px 86px 0px;
-}
-.half-width img {
-  width: 556px;
-  height: 438px;
-}
-
-/* Top Hired Player  */
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.top-player{
-  margin-bottom: 130px;
-
-}
-.section-title{
-  color: #562EFF;
-  font-size: 36px;
-  margin-bottom: 0px;
-  
-}
-.players{
+.match {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  /* grid-template-columns: repeat(1fr 1fr 1fr); */
-  grid-row-gap: 30px ;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: 50px 100px;
+  box-shadow: 10px 10px 40px rgb(184, 180, 180);
+  border-radius: 10px;
 }
-.player{
+.match-info {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-.player img{
-  width: 56px;
-  height: 56px;
-}
-.player-name{
-  padding-left: 16px;
-  font-size: 18px;
+  padding: 20px;
 }
 
-
-
-/* Footer section  */
-
-
-.footer-logo{
-margin-left: 400px;
+.match-info h2 {
+  padding: 20px;
 }
-.footer-logo img{
-  width: 483px;
-  height: 110px;
-  left: 0px;
-  top: 0px;
-
-
+.none {
+  visibility: hidden;
 }
-.social-icon{
+
+.match-photo img {
+  height: 80px;
+  width: 100px;
+  border-radius: 50%;
+}
+.social {
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+footer img {
+  height: 80px;
+  width: 380px;
+}
+.social {
   display: flex;
   justify-content: center;
 }
-.social-icon i{
-  padding-left:14px ;
-  width: 32px;
-  height: 32px;
+.social a {
+  text-decoration: none;
+  font-size: 20px;
 }
-footer p{
-  text-align: center;
-  font-size: 18px;
+.fab {
+  padding: 20px;
+}
+/* Adding Media Queries */
+
+/* Media Queries for Mobile Device */
+
+@media only screen and (max-width: 688px) {
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlights {
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+  }
+  .content {
+    margin: 20px 0;
+  }
+  .content h1 {
+    font-size: 2em;
+  }
+  .photo img {
+    width: 400px;
+  }
+  .match {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .half-width h1 {
+    font-size: 2em;
+  }
+  .header {
+    width: 100%;
+  }
+  .flaxible {
+    flex-direction: column;
+  }
+}
+
+
+/* Media Queries For Medium Size Screen Like Tablet */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    width: 300px;
+  }
+  .highlights {
+    flex-direction: column;
+    margin: 40px;
+    padding: 0;
+  }
+  .content {
+    margin: 60px 0;
+  }
+  .content h1 {
+    font-size: 3em;
+  }
+  .photo img {
+    width: 600px;
+  }
+  .match {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .half-width h1 {
+    font-size: 3em;
+  }
+
+  .banner img .header {
+    display: flex;
+    width: 100%;
+  }
+  .flaxible {
+    flex-direction: column;
+  }
 }
