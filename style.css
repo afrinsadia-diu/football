@@ -186,9 +186,9 @@ hr{
 
 /* Footer section  */
 
+
 .footer-logo{
-margin-right: 475px;
-margin-left: 475px;
+margin-left: 400px;
 }
 .footer-logo img{
   width: 483px;
@@ -196,4 +196,18 @@ margin-left: 475px;
   left: 0px;
   top: 0px;
 
+
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+}
+.social-icon i{
+  padding-left:14px ;
+  width: 32px;
+  height: 32px;
+}
+footer p{
+  text-align: center;
+  font-size: 18px;
 }
